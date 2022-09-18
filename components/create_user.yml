@@ -1,0 +1,21 @@
+name: InstallAngular
+description: this document installs node on ubuntu
+schemaVersion: 1.0
+
+phases:
+    - name: build
+      steps:
+        - name: CreateUser
+          action: ExecuteBash
+          inputs:
+            commands:
+                - useradd ec2-user
+                - usermod -aG sudo ec2-user
+                - mkdir /home/ec2-user/.ssh
+                - chmod 700 /home/ec2-user/.ssh
+                - touch /home/ec2-user/.ssh/authorized_keys
+                - chmod 600 /home/ec2-user/.ssh/authorized_keys
+                - echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDLCF646eu8HarlG1X2IWmO7VvUhZp60CWKA6EPLuofF0LYN7FCFV5u4j+s+GVASwRHCMQIzUtr7G49b+IeEdOCFNH3gRhCVeVcWqXLF4QVB1Bky/RYtvPkpYfLjgztZVbe1HgTJB2WVOYW+gZT+3RaTxpLcJEvCHbr2V0Zlp3RFanoj2M6xcm741xPLCAhtA+bXfBsxkM1tlZrwzFeaNfGmYz1fC93GJy2IAdPl5CyLBNOo0pdXCe5MAvXb4dhs0yjvTEOpoKRxlYPhEBa6TI5WBftFEyXe3O8uUhuNsMUdpyaJcDQP3vUUPloso1eIr+s6IKliS5aN3mrNZ/oFYkcvvso6CLaUPpeb3SpFKomNx5snG0nNrEbAf5t8HE6yGGvJnBDgvZQUR/aKKwSe67oZ3T4WxKrnG89oewmc3IZ3DbNHMv9/tUi676R12zzKJUrAhXcJ8F9p4HKmBtx3+dUiNv5DYr7tRWl1sco4teTJJKaiGHd/CesUNomzWyUbZc= eye@fedora" >> /home/ec2-user/.ssh/authorized_keys
+
+
+

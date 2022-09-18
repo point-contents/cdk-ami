@@ -1,7 +1,5 @@
 
-# Welcome to your CDK Python project!
-
-This is a blank project for CDK development with Python.
+# Golden AMI Image Builder
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
@@ -23,12 +21,6 @@ step to activate your virtualenv.
 
 ```
 $ source .venv/bin/activate
-```
-
-If you are a Windows platform, you would activate the virtualenv like this:
-
-```
-% .venv\Scripts\activate.bat
 ```
 
 Once the virtualenv is activated, you can install the required dependencies.
@@ -55,4 +47,4 @@ command.
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
 
-Enjoy!
+
